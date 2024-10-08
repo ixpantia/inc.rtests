@@ -1,2 +1,10 @@
 ^testthat\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
+^CODE_OF_CONDUCT\.md$
+^LICENSE\.md$
+^rtests\.Rproj$
