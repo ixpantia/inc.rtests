@@ -16,4 +16,3 @@ test_that("is minimalistic and only takes `formula`", {
   y <- 2 * x
   expect_error(linear_model(y ~ x, data = mtcars), "unused")
 })
-
