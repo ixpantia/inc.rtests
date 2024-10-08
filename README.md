@@ -63,6 +63,8 @@ Objectives:
 - [Main resource used to develop this series](FIXME).
 - …
 
+------------------------------------------------------------------------
+
 </details>
 
 ## Installation
