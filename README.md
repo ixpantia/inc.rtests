@@ -81,4 +81,21 @@ pak::pak("dsincubator/rtests")
 
 ``` r
 library(rtests)
+
+x <- 1:3
+y <- 2 * x
+
+# Minimal version of `lm()`
+linear_model(y ~ x)
+#> 
+#> Call:
+#> lm(formula = formula)
+#> 
+#> Coefficients:
+#> (Intercept)            x  
+#>           0            2
+
+# Fails. The only valid argument is `formula`
+linear_model(y ~ x, data = mtcars)
+#> Error in linear_model(y ~ x, data = mtcars): unused argument (data = mtcars)
 ```
