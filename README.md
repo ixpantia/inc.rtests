@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/dsincubator/rtests/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dsincubator/rtests/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of rtests is to show by example how to test R code using
+The goal of rtests is to show by example how to test R code with
 testthat, with a focus on testing models.
 
 <details>
