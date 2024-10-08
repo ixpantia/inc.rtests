@@ -11,6 +11,15 @@
 The goal of rtests is to show by example how to test R code using
 testthat, with a focus on testing models.
 
+<details>
+<summary>
+dsincubator syllabus
+</summary>
+
+todo
+
+</details>
+
 ## Installation
 
 You can install the development version of rtests from
