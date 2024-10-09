@@ -86,7 +86,7 @@ x <- 1:3
 y <- 2 * x
 
 # Minimal version of `lm()`
-linear_model(y ~ x)
+fit_linear_model(y ~ x)
 #> 
 #> Call:
 #> lm(formula = formula)
@@ -96,6 +96,6 @@ linear_model(y ~ x)
 #>           0            2
 
 # Fails. The only valid argument is `formula`
-linear_model(y ~ x, data = mtcars)
-#> Error in linear_model(y ~ x, data = mtcars): unused argument (data = mtcars)
+fit_linear_model(y ~ x, data = mtcars)
+#> Error in fit_linear_model(y ~ x, data = mtcars): unused argument (data = mtcars)
 ```

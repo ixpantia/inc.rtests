@@ -4,9 +4,9 @@
 \name{rtests-package}
 \alias{rtests}
 \alias{rtests-package}
-\title{rtests: What the Package Does (One Line, Title Case)}
+\title{rtests: Testing Demo}
 \description{
-What the package does (one paragraph).
+Show by example how to test R code with testthat, with a focus on testing models.
 }
 \seealso{
 Useful links:
