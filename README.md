@@ -18,8 +18,8 @@ Data scientists with some experience writing R code and functions but little or 
 ## Objectives
 
 - Build the R packages infrastructure.
-- Setup CI/CD for the package and website.
-- Create a wrapper of lm().
+- Create simpler version of `lm()`.
+- Setup CI/CD.
 - Report coverage.
 - Test Driven Development (TDD).
 
