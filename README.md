@@ -19,13 +19,12 @@ Agregar infraestructura básica:
 
 - Crear un paquete en R.
 - Ejecutar R CMD check para detectar y corregir problemas.
-- Crear una lista de verificación de infraestructura adicional a considerar.
-- Configurar un flujo de trabajo para ejecutar R CMD check en GitHub Actions.
-- Construir el sitio web del paquete localmente.
-- Configurar un flujo de trabajo para construir y desplegar un sitio web en GitHub Pages.
-- Ejecutar R CMD check.
+- Configurar R CMD check en GitHub Actions.
+- Construir el website localmente.
+- Configurar el despliege del website en GitHub Pages.
 - Crear un PR y observar la ejecución de los flujos de trabajo.
 - Fusionar el PR para ver el sitio web en vivo.
+- Crear un checklist de infraestructura adicional a considerar.
 
 Crear y probar una función:
 
