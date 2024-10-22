@@ -40,8 +40,6 @@ Crear y probar una función:
 
 </details>
 
-----
-
 <details><summary>EN</summary>
 
 This meetup overviews the package development workflow, with a focus on unit tests and CI/CD.
