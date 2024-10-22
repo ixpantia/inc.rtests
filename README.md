@@ -1,5 +1,6 @@
-<details>
 # rpkgs
+
+<details><summary>ES</summary>
 
 Este meetup ofrece una visión general del flujo de trabajo para el desarrollo de paquetes, con un enfoque en las pruebas unitarias y CI/CD.
 
@@ -41,9 +42,7 @@ Crear y probar una función:
 
 ----
 
-<details>
-
-# rpkgs
+<details><summary>EN</summary>
 
 This meetup overviews the package development workflow, with a focus on unit tests and CI/CD.
 
