@@ -1,3 +1,48 @@
+<details>
+# rpkgs
+
+Este meetup ofrece una visión general del flujo de trabajo para el desarrollo de paquetes, con un enfoque en las pruebas unitarias y CI/CD.
+
+## Importancia
+
+> Un paquete es un conjunto de convenciones para organizar tu código y los artefactos relacionados: si sigues esas convenciones, obtienes un montón de herramientas gratis.
+> -- https://mastering-shiny.org/scaling-packaging.html
+
+## Audiencia
+
+Científicos de datos con algo de experiencia escribiendo código y funciones en R, pero con poca o ninguna experiencia en el desarrollo de paquetes en R.
+
+## Objetivos
+
+Agregar infraestructura básica:
+
+- Crear un paquete en R.
+- Ejecutar R CMD check para detectar y corregir problemas.
+- Crear una lista de verificación de infraestructura adicional a considerar.
+- Configurar un flujo de trabajo para ejecutar R CMD check en GitHub Actions.
+- Construir el sitio web del paquete localmente.
+- Configurar un flujo de trabajo para construir y desplegar un sitio web en GitHub Pages.
+- Ejecutar R CMD check.
+- Crear un PR y observar la ejecución de los flujos de trabajo.
+- Fusionar el PR para ver el sitio web en vivo.
+
+Crear y probar una función:
+
+- Crear una función simple.
+- Probarla.
+- Reportar la cobertura.
+- Ampliarla usando TDD.
+- Documentarla.
+- Ejecutar R CMD check.
+- Construir el sitio web localmente.
+- Crear un PR.
+
+</details>
+
+----
+
+<details>
+
 # rpkgs
 
 This meetup overviews the package development workflow, with a focus on unit tests and CI/CD.
@@ -37,6 +82,8 @@ Create and test a function:
 - Build the website locally.
 - Create a PR.
 
+</details>
+
 ## Demo
 
 <img src=https://github.com/user-attachments/assets/bdab4d90-c1f0-4bfc-89d5-749b976cf466 width=500>
@@ -48,4 +95,5 @@ https://r-pkgs.org/whole-game.html#review
 * [R packages (2e)](https://r-pkgs.org/).
 * [usethis](https://usethis.r-lib.org/reference/index.html).
 * [r-lib/actions/examples](https://github.com/r-lib/actions/tree/v2/examples#example-workflows).
+
 
