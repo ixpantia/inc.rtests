@@ -37,6 +37,18 @@ Crear y probar una función:
 - Construir el sitio web localmente.
 - Crear un PR.
 
+Checkear la integracion con una dependencia reversa:
+
+- Identificar un paquete con una dependencia reversa.
+- Revisar cómo correr tests, checks, e instalar un paquete.
+- Ver cómo validar la clase de un input.
+- Ver cómo crear un mensaje de error informativo.
+- Aprender a usar "snaphsot tests".
+- Aprender a gestionar versiones y el changelog.
+- Probar una dependencia reversa localmente
+- Probar una dependencia reversa en GitHub Actions
+- Leer y responder a fallos de prueba.
+
 </details>
 
 <details><summary>EN</summary>
@@ -77,6 +89,18 @@ Create and test a function:
 - Run R CMD check.
 - Build the website locally.
 - Create a PR.
+
+Check integration with a reverse dependency:
+
+* Identify a package with a reverse dependency  
+* Review how to test, check, and install a package  
+* See how to assert the class of an input  
+* See how to create informative error messages  
+* Learn how to use snapshot tests  
+* Learn how to manage versions and the changelog  
+* Test a reverse dependency locally  
+* Test a reverse dependency on GitHub Actions  
+* Read and respond to test failures
 
 </details>
 
