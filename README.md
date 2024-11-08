@@ -112,8 +112,20 @@ https://r-pkgs.org/whole-game.html#review
 
 ## Resources 
 
-* [R packages (2e)](https://r-pkgs.org/).
-* [usethis](https://usethis.r-lib.org/reference/index.html).
-* [r-lib/actions/examples](https://github.com/r-lib/actions/tree/v2/examples#example-workflows).
+GitHub Actions
 
+* Documentation of the [checkout](https://github.com/actions/checkout) action.
+* Workflows to work with R: [r-lib/actions/examples](https://github.com/r-lib/actions/tree/v2/examples#example-workflows).
+
+Packages
+
+* [usethis](https://usethis.r-lib.org/reference/index.html) to create packages and much more.
+* [styler](https://styler.r-lib.org/) package to automate code-styling.
+* [fledge](ttps://fledge.cynkra.com/) package to manage the changelog.
+* [cli](https://cli.r-lib.org/index.html) package to write informative and beautiful error messages and much more.
+
+Other
+
+* [R packages (2e)](https://r-pkgs.org/).
+* [Snapshot testing](https://testthat.r-lib.org/articles/snapshotting.html)
 
