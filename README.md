@@ -129,9 +129,8 @@ Other
 * [R packages (2e)](https://r-pkgs.org/).
 * [Snapshot testing](https://testthat.r-lib.org/articles/snapshotting.html)
 
-Repos used in demos for reverse dependency checks on GitHub Actions
+Reverse dependency checks on GitHub Actions
 
-* [Adapted tower](https://github.com/dsincubator/tower) ([original](https://github.com/ixpantia/tower))
-* [Adapted tapLock](https://github.com/dsincubator/tapLock) ([original](https://github.com/ixpantia/tapLock))
-  
-
+* [tower](https://github.com/ixpantia/tower).
+* [tapLock](https://github.com/ixpantia/tapLock).
+* [Workflow file](https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7).
