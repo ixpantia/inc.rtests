@@ -106,7 +106,7 @@ Check integration with a reverse dependency:
 
 ## Demo
 
-<img src=https://github.com/user-attachments/assets/bdab4d90-c1f0-4bfc-89d5-749b976cf466 width=500>
+<img src=https://github.com/user-attachments/assets/aabb5a62-7f4b-4767-b1d7-52130c395531 width=500>
 
 https://r-pkgs.org/whole-game.html#review
 
