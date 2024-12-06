@@ -4,6 +4,8 @@
 # inc.rtests
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/ixpantia/inc.rtests/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ixpantia/inc.rtests/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of inc.rtests is to greet you.
