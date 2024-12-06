@@ -47,146 +47,26 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="incrtests">inc.rtests<a class="anchor" aria-label="anchor" href="#incrtests"></a>
 </h1></div>
-<p>Este meetup ofrece una visión general del flujo de trabajo para el desarrollo de paquetes, con un enfoque en las pruebas unitarias y CI/CD.</p>
+<!-- badges: start -->
+<!-- badges: end -->
+<p>The goal of inc.rtests is to greet you.</p>
 <div class="section level2">
-<h2 id="importancia">Importancia<a class="anchor" aria-label="anchor" href="#importancia"></a>
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<blockquote>
-<p>Un paquete es un conjunto de convenciones para organizar tu código y los artefactos relacionados: si sigues esas convenciones, obtienes un montón de herramientas gratis. – <a href="https://mastering-shiny.org/scaling-packaging.html" class="external-link uri">https://mastering-shiny.org/scaling-packaging.html</a></p>
-</blockquote>
-</div>
-<div class="section level2">
-<h2 id="audiencia">Audiencia<a class="anchor" aria-label="anchor" href="#audiencia"></a>
-</h2>
-<p>Científicos de datos con algo de experiencia escribiendo código y funciones en R, pero con poca o ninguna experiencia en el desarrollo de paquetes en R.</p>
+<p>You can install the development version of inc.rtests from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"ixpantia/inc.rtests"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="objetivos">Objetivos<a class="anchor" aria-label="anchor" href="#objetivos"></a>
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>Crear y chequear la infraestructura básica de un paquete:</p>
-<ul>
-<li>Crear un paquete en R.</li>
-<li>Chequear la estructura y corregir problemas.</li>
-<li>Crear un checklist de infraestructura adicional a considerar.</li>
-<li>Documentar el “home page”, con el objetivo, installación y ejemplo.</li>
-<li>Configurar checks de estructura en GitHub.</li>
-<li>Configurar el despliege del website en GitHub.</li>
-<li>Empujar los cambios a GitHub.</li>
-</ul>
-<p>Crear y probar una función simple:</p>
-<ul>
-<li>Crear una función simple.</li>
-<li>Probarla.</li>
-<li>Reportar la cobertura.</li>
-<li>Documentarla.</li>
-<li>Chequear la estructura y corregir problemas.</li>
-<li>Chequear el website localmente.</li>
-<li>Empujar los cambios a GitHub.</li>
-</ul>
-<p>Mostrar otras cosas que hicimos pero que no podemos cubrir hoy:</p>
-<ul>
-<li>Check de integración para una dependencias reversa.</li>
-<li>El formato “incubadora”.</li>
-</ul>
-</div>
-<div class="section level2">
-<h2 id="flujo-de-trabajo">Flujo de trabajo<a class="anchor" aria-label="anchor" href="#flujo-de-trabajo"></a>
-</h2>
-<p><img src="https://github.com/user-attachments/assets/aabb5a62-7f4b-4767-b1d7-52130c395531" width="500"></p>
-<p><a href="https://r-pkgs.org/whole-game.html#review" class="external-link uri">https://r-pkgs.org/whole-game.html#review</a></p>
-</div>
-<div class="section level2">
-<h2 id="demo">Demo<a class="anchor" aria-label="anchor" href="#demo"></a>
-</h2>
-<p>En vivo.</p>
-</div>
-<div class="section level2">
-<h2 id="recursos">Recursos<a class="anchor" aria-label="anchor" href="#recursos"></a>
-</h2>
-<ul>
-<li>Paquete <a href="https://usethis.r-lib.org/reference/index.html" class="external-link">usethis</a> para crear paquetes y mucho mas.</li>
-<li>Workflows para trabajar con R: <a href="https://github.com/r-lib/actions/tree/v2/examples#example-workflows" class="external-link">r-lib/actions/examples</a>.</li>
-<li>
-<a href="https://r-pkgs.org/" class="external-link">R packages (2e)</a>.</li>
-<li>Worflow personalizado para checkear la integracion con una dependencia reversa: <a href="https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7" class="external-link">ejemplo</a>.</li>
-<li>El formato “incubadora” (<a href="https://github.com/dsincubator/meta" class="external-link">meta</a>, <a href="https://github.com/dsincubator/template" class="external-link">template</a>).</li>
-</ul>
-<details><summary>
-EN
-</summary></details>
+<p>This is a basic example which shows you how to solve a common problem:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ixpantia.github.io/inc.rtests/">inc.rtests</a></span><span class="op">)</span></span>
+<span><span class="co">## basic example code</span></span></code></pre></div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="incrtests-1">inc.rtests<a class="anchor" aria-label="anchor" href="#incrtests-1"></a>
-</h1>
-<p>This meetup provides an overview of the workflow for package development, focusing on unit testing and CI/CD.</p>
-<div class="section level2">
-<h2 id="importance">Importance<a class="anchor" aria-label="anchor" href="#importance"></a>
-</h2>
-<blockquote>
-<p>A package is a set of conventions for organizing your code and related artifacts: if you follow these conventions, you get a bunch of tools for free.<br>
-– <a href="https://mastering-shiny.org/scaling-packaging.html" class="external-link uri">https://mastering-shiny.org/scaling-packaging.html</a></p>
-</blockquote>
-</div>
-<div class="section level2">
-<h2 id="audience">Audience<a class="anchor" aria-label="anchor" href="#audience"></a>
-</h2>
-<p>Data scientists with some experience writing code and functions in R but little to no experience in R package development.</p>
-</div>
-<div class="section level2">
-<h2 id="objectives">Objectives<a class="anchor" aria-label="anchor" href="#objectives"></a>
-</h2>
-<p>Create and check the basic infrastructure of a package:</p>
-<ul>
-<li>Create a package in R.</li>
-<li>Check the structure and fix issues.</li>
-<li>Create a checklist of additional infrastructure to consider.</li>
-<li>Document the “home page” with the goal, installation instructions, and an example.</li>
-<li>Set up structure checks on GitHub.</li>
-<li>Configure website deployment on GitHub.</li>
-<li>Push changes to GitHub.</li>
-</ul>
-<p>Create and test a simple function:</p>
-<ul>
-<li>Create a simple function.</li>
-<li>Test it.</li>
-<li>Report coverage.</li>
-<li>Document it.</li>
-<li>Check the structure and fix issues.</li>
-<li>Check the website locally.</li>
-<li>Push changes to GitHub.</li>
-</ul>
-<p>Show other things we did but cannot cover today:</p>
-<ul>
-<li>Integration checks for a reverse dependency.</li>
-<li>The “incubator” format.</li>
-</ul>
-</div>
-<div class="section level2">
-<h2 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a>
-</h2>
-<p><img src="https://github.com/user-attachments/assets/aabb5a62-7f4b-4767-b1d7-52130c395531" width="500"></p>
-<p><a href="https://r-pkgs.org/whole-game.html#review" class="external-link uri">https://r-pkgs.org/whole-game.html#review</a></p>
-</div>
-<div class="section level2">
-<h2 id="demo-1">Demo<a class="anchor" aria-label="anchor" href="#demo-1"></a>
-</h2>
-<p>Live.</p>
-</div>
-<div class="section level2">
-<h2 id="resources">Resources<a class="anchor" aria-label="anchor" href="#resources"></a>
-</h2>
-<ul>
-<li>The <a href="https://usethis.r-lib.org/reference/index.html" class="external-link">usethis</a> package for creating packages and much more.</li>
-<li>Workflows for working with R: <a href="https://github.com/r-lib/actions/tree/v2/examples#example-workflows" class="external-link">r-lib/actions/examples</a>.</li>
-<li>
-<a href="https://r-pkgs.org/" class="external-link">R Packages (2nd edition)</a>.</li>
-<li>Custom workflow to check integration with a reverse dependency: <a href="https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7" class="external-link">example</a>.</li>
-<li>The “incubator” format (<a href="https://github.com/dsincubator/meta" class="external-link">meta</a>, <a href="https://github.com/dsincubator/template" class="external-link">template</a>).</li>
-</ul>
-</div>
-</div>
-
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
