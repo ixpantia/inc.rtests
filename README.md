@@ -1,44 +1,46 @@
-# Series Title
+# inc.rtests
 
-The goal of this series is ...
+Este meetup ofrece una visión general del flujo de trabajo para el desarrollo de paquetes, con un enfoque en las pruebas unitarias y CI/CD.
 
-At the end of this series, you will know how to do things like:
+## Importancia
 
-* ...
-* ...
+> Un paquete es un conjunto de convenciones para organizar tu código y los artefactos relacionados: si sigues esas convenciones, obtienes un montón de herramientas gratis.
+> -- https://mastering-shiny.org/scaling-packaging.html
 
-## Who is the audience?
+## Audiencia
 
-...
+Científicos de datos con algo de experiencia escribiendo código y funciones en R, pero con poca o ninguna experiencia en el desarrollo de paquetes en R.
 
-## Why is it important?
+## Objetivos
 
-...
+Agregar infraestructura básica:
 
-## Program (tentative)
+- Crear un paquete en R.
+- Ejecutar R CMD check para detectar y corregir problemas.
+- Crear un checklist de infraestructura adicional a considerar.
+- Agregar un README.
+- Configurar R CMD check en GitHub Actions.
+- Configurar el despliege del website en GitHub Pages.
 
-### Meeting 1: Introduction
+Crear y probar una función:
 
-This meeting will help you understand the most important aspects of this topic, and you can decide whether to attend the following meetings to dive deeper into the subject.
+- Crear una función simple.
+- Probarla.
+- Reportar la cobertura.
+- Documentarla.
+- Ejecutar R CMD check.
+- Construir el sitio web localmente.
+- Crear un PR.
 
-Objectives:
+## Flujo de trabajo
 
-* ...
-* ...
+<img src=https://github.com/user-attachments/assets/bdab4d90-c1f0-4bfc-89d5-749b976cf466 width=500>
 
-### Meeting 2: ...
+https://r-pkgs.org/whole-game.html#review
 
-This meeting will help you ...
+## Recursos
 
-Objectives:
-
-* ...
-* ...
-
-## Resources
-
-* [About the ixpanteria project](https://github.com/ixpanteria).
-* [YouTube playlist with videos in the entire project](FIXME).
-* [YouTube playlist with videos in this specific series](FIXME).
-* [Main resource used to develop this series](FIXME).
-* ...
+* Paquete [usethis](https://usethis.r-lib.org/reference/index.html) para crear paquetes y mucho mas.
+* Workflows para trabajar con R: [r-lib/actions/examples](https://github.com/r-lib/actions/tree/v2/examples#example-workflows).
+* [R packages (2e)](https://r-pkgs.org/).
+* Worflow personalizado para checkear la integracion con una dependencia reversa: [ejemplo](https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7).
