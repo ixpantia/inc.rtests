@@ -47,9 +47,7 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="incrtests">inc.rtests<a class="anchor" aria-label="anchor" href="#incrtests"></a>
 </h1></div>
-<details><summary>
-ES
-</summary><p>Este meetup ofrece una visión general del flujo de trabajo para el desarrollo de paquetes, con un enfoque en las pruebas unitarias y CI/CD.</p>
+<p>Este meetup ofrece una visión general del flujo de trabajo para el desarrollo de paquetes, con un enfoque en las pruebas unitarias y CI/CD.</p>
 <div class="section level2">
 <h2 id="importancia">Importancia<a class="anchor" aria-label="anchor" href="#importancia"></a>
 </h2>
@@ -65,147 +63,130 @@ ES
 <div class="section level2">
 <h2 id="objetivos">Objetivos<a class="anchor" aria-label="anchor" href="#objetivos"></a>
 </h2>
-<p>Agregar infraestructura básica:</p>
+<p>Crear y chequear la infraestructura básica de un paquete:</p>
 <ul>
 <li>Crear un paquete en R.</li>
-<li>Ejecutar R CMD check para detectar y corregir problemas.</li>
-<li>Configurar R CMD check en GitHub Actions.</li>
-<li>Construir el website localmente.</li>
-<li>Configurar el despliege del website en GitHub Pages.</li>
-<li>Crear un PR y observar la ejecución de los flujos de trabajo.</li>
-<li>Fusionar el PR para ver el sitio web en vivo.</li>
+<li>Chequear la estructura y corregir problemas.</li>
 <li>Crear un checklist de infraestructura adicional a considerar.</li>
+<li>Documentar el “home page”, con el objetivo, installación y ejemplo.</li>
+<li>Configurar checks de estructura en GitHub.</li>
+<li>Configurar el despliege del website en GitHub.</li>
+<li>Empujar los cambios a GitHub.</li>
 </ul>
-<p>Crear y probar una función:</p>
+<p>Crear y probar una función simple:</p>
 <ul>
 <li>Crear una función simple.</li>
 <li>Probarla.</li>
 <li>Reportar la cobertura.</li>
-<li>Ampliarla usando TDD.</li>
 <li>Documentarla.</li>
-<li>Ejecutar R CMD check.</li>
-<li>Construir el sitio web localmente.</li>
-<li>Crear un PR.</li>
+<li>Chequear la estructura y corregir problemas.</li>
+<li>Chequear el website localmente.</li>
+<li>Empujar los cambios a GitHub.</li>
 </ul>
-<p>Checkear la integracion con una dependencia reversa:</p>
+<p>Mostrar otras cosas que hicimos pero que no podemos cubrir hoy:</p>
 <ul>
-<li>Identificar un paquete con una dependencia reversa.</li>
-<li>Revisar cómo correr tests, checks, e instalar un paquete.</li>
-<li>Ver cómo validar la clase de un input.</li>
-<li>Ver cómo crear un mensaje de error informativo.</li>
-<li>Aprender a usar “snaphsot tests”.</li>
-<li>Aprender a gestionar versiones y el changelog.</li>
-<li>Probar una dependencia reversa localmente</li>
-<li>Probar una dependencia reversa en GitHub Actions</li>
-<li>Leer y responder a fallos de prueba.</li>
-</ul>
-<details><summary>
-EN
-</summary><p>This meetup overviews the package development workflow, with a focus on unit tests and CI/CD.</p>
-</details>
-</div>
-<div class="section level2">
-<h2 id="importance">Importance<a class="anchor" aria-label="anchor" href="#importance"></a>
-</h2>
-<blockquote>
-<p>A package is a set of conventions for organising your code and related artefacts: if you follow those conventions, you get a bunch of tools for free. – <a href="https://mastering-shiny.org/scaling-packaging.html" class="external-link uri">https://mastering-shiny.org/scaling-packaging.html</a></p>
-</blockquote>
-</div>
-<div class="section level2">
-<h2 id="audience">Audience<a class="anchor" aria-label="anchor" href="#audience"></a>
-</h2>
-<p>Data scientists with some experience writing R code and functions but little or no experience developing R packages.</p>
-</div>
-<div class="section level2">
-<h2 id="objectives">Objectives<a class="anchor" aria-label="anchor" href="#objectives"></a>
-</h2>
-<p>Add basic infrastructure:</p>
-<ul>
-<li>Create an R package.</li>
-<li>Run R CMD check to detect and fix problems.</li>
-<li>Create a checklist of additional infrastructure to consider.</li>
-<li>Setup a workflow to run R CMD check on GitHub Actions.</li>
-<li>Build the package website locally.</li>
-<li>Setup a workflow to build and deploy a website to GitHub Pages.</li>
-<li>Run R CMD check.</li>
-<li>Create a PR and watch the workflows run.</li>
-<li>Merge the PR to see the website live.</li>
-</ul>
-<p>Create and test a function:</p>
-<ul>
-<li>Create a simple function.</li>
-<li>Test it.</li>
-<li>Report coverage.</li>
-<li>Extend it using TDD.</li>
-<li>Document it.</li>
-<li>Run R CMD check.</li>
-<li>Build the website locally.</li>
-<li>Create a PR.</li>
-</ul>
-<p>Check integration with a reverse dependency:</p>
-<ul>
-<li>Identify a package with a reverse dependency<br>
-</li>
-<li>Review how to test, check, and install a package<br>
-</li>
-<li>See how to assert the class of an input<br>
-</li>
-<li>See how to create informative error messages<br>
-</li>
-<li>Learn how to use snapshot tests<br>
-</li>
-<li>Learn how to manage versions and the changelog<br>
-</li>
-<li>Test a reverse dependency locally<br>
-</li>
-<li>Test a reverse dependency on GitHub Actions<br>
-</li>
-<li>Read and respond to test failures</li>
+<li>Check de integración para una dependencias reversa.</li>
+<li>El formato “incubadora”.</li>
 </ul>
 </div>
 <div class="section level2">
-<h2 id="demo">Demo<a class="anchor" aria-label="anchor" href="#demo"></a>
+<h2 id="flujo-de-trabajo">Flujo de trabajo<a class="anchor" aria-label="anchor" href="#flujo-de-trabajo"></a>
 </h2>
 <p><img src="https://github.com/user-attachments/assets/aabb5a62-7f4b-4767-b1d7-52130c395531" width="500"></p>
 <p><a href="https://r-pkgs.org/whole-game.html#review" class="external-link uri">https://r-pkgs.org/whole-game.html#review</a></p>
 </div>
 <div class="section level2">
-<h2 id="resources">Resources<a class="anchor" aria-label="anchor" href="#resources"></a>
+<h2 id="demo">Demo<a class="anchor" aria-label="anchor" href="#demo"></a>
 </h2>
-<p>GitHub Actions</p>
+<p>En vivo.</p>
+</div>
+<div class="section level2">
+<h2 id="recursos">Recursos<a class="anchor" aria-label="anchor" href="#recursos"></a>
+</h2>
 <ul>
-<li>Documentation of the <a href="https://github.com/actions/checkout" class="external-link">checkout</a> action.</li>
-<li>Workflows to work with R: <a href="https://github.com/r-lib/actions/tree/v2/examples#example-workflows" class="external-link">r-lib/actions/examples</a>.</li>
-</ul>
-<p>Packages</p>
-<ul>
-<li>
-<a href="https://usethis.r-lib.org/reference/index.html" class="external-link">usethis</a> to create packages and much more.</li>
-<li>
-<a href="https://styler.r-lib.org/" class="external-link">styler</a> package to automate code-styling.</li>
-<li>
-<a href="ttps://fledge.cynkra.com/">fledge</a> package to manage the changelog.</li>
-<li>
-<a href="https://cli.r-lib.org/index.html" class="external-link">cli</a> package to write informative and beautiful error messages and much more.</li>
-</ul>
-<p>Other</p>
-<ul>
+<li>Paquete <a href="https://usethis.r-lib.org/reference/index.html" class="external-link">usethis</a> para crear paquetes y mucho mas.</li>
+<li>Workflows para trabajar con R: <a href="https://github.com/r-lib/actions/tree/v2/examples#example-workflows" class="external-link">r-lib/actions/examples</a>.</li>
 <li>
 <a href="https://r-pkgs.org/" class="external-link">R packages (2e)</a>.</li>
-<li><a href="https://testthat.r-lib.org/articles/snapshotting.html" class="external-link">Snapshot testing</a></li>
+<li>Worflow personalizado para checkear la integracion con una dependencia reversa: <a href="https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7" class="external-link">ejemplo</a>.</li>
+<li>El formato “incubadora” (<a href="https://github.com/dsincubator/meta" class="external-link">meta</a>, <a href="https://github.com/dsincubator/template" class="external-link">template</a>).</li>
 </ul>
-<p>Reverse dependency checks on GitHub Actions</p>
+<details><summary>
+EN
+</summary></details>
+</div>
+</div>
+<div class="section level1">
+<h1 id="incrtests-1">inc.rtests<a class="anchor" aria-label="anchor" href="#incrtests-1"></a>
+</h1>
+<p>This meetup provides an overview of the workflow for package development, focusing on unit testing and CI/CD.</p>
+<div class="section level2">
+<h2 id="importance">Importance<a class="anchor" aria-label="anchor" href="#importance"></a>
+</h2>
+<blockquote>
+<p>A package is a set of conventions for organizing your code and related artifacts: if you follow these conventions, you get a bunch of tools for free.<br>
+– <a href="https://mastering-shiny.org/scaling-packaging.html" class="external-link uri">https://mastering-shiny.org/scaling-packaging.html</a></p>
+</blockquote>
+</div>
+<div class="section level2">
+<h2 id="audience">Audience<a class="anchor" aria-label="anchor" href="#audience"></a>
+</h2>
+<p>Data scientists with some experience writing code and functions in R but little to no experience in R package development.</p>
+</div>
+<div class="section level2">
+<h2 id="objectives">Objectives<a class="anchor" aria-label="anchor" href="#objectives"></a>
+</h2>
+<p>Create and check the basic infrastructure of a package:</p>
 <ul>
-<li>
-<a href="https://github.com/ixpantia/tower" class="external-link">tower</a>.</li>
-<li>
-<a href="https://github.com/ixpantia/tapLock" class="external-link">tapLock</a>.</li>
-<li>
-<a href="https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7" class="external-link">Workflow file</a>.</li>
+<li>Create a package in R.</li>
+<li>Check the structure and fix issues.</li>
+<li>Create a checklist of additional infrastructure to consider.</li>
+<li>Document the “home page” with the goal, installation instructions, and an example.</li>
+<li>Set up structure checks on GitHub.</li>
+<li>Configure website deployment on GitHub.</li>
+<li>Push changes to GitHub.</li>
+</ul>
+<p>Create and test a simple function:</p>
+<ul>
+<li>Create a simple function.</li>
+<li>Test it.</li>
+<li>Report coverage.</li>
+<li>Document it.</li>
+<li>Check the structure and fix issues.</li>
+<li>Check the website locally.</li>
+<li>Push changes to GitHub.</li>
+</ul>
+<p>Show other things we did but cannot cover today:</p>
+<ul>
+<li>Integration checks for a reverse dependency.</li>
+<li>The “incubator” format.</li>
 </ul>
 </div>
-</details>
+<div class="section level2">
+<h2 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a>
+</h2>
+<p><img src="https://github.com/user-attachments/assets/aabb5a62-7f4b-4767-b1d7-52130c395531" width="500"></p>
+<p><a href="https://r-pkgs.org/whole-game.html#review" class="external-link uri">https://r-pkgs.org/whole-game.html#review</a></p>
 </div>
+<div class="section level2">
+<h2 id="demo-1">Demo<a class="anchor" aria-label="anchor" href="#demo-1"></a>
+</h2>
+<p>Live.</p>
+</div>
+<div class="section level2">
+<h2 id="resources">Resources<a class="anchor" aria-label="anchor" href="#resources"></a>
+</h2>
+<ul>
+<li>The <a href="https://usethis.r-lib.org/reference/index.html" class="external-link">usethis</a> package for creating packages and much more.</li>
+<li>Workflows for working with R: <a href="https://github.com/r-lib/actions/tree/v2/examples#example-workflows" class="external-link">r-lib/actions/examples</a>.</li>
+<li>
+<a href="https://r-pkgs.org/" class="external-link">R Packages (2nd edition)</a>.</li>
+<li>Custom workflow to check integration with a reverse dependency: <a href="https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7" class="external-link">example</a>.</li>
+<li>The “incubator” format (<a href="https://github.com/dsincubator/meta" class="external-link">meta</a>, <a href="https://github.com/dsincubator/template" class="external-link">template</a>).</li>
+</ul>
+</div>
+</div>
+
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
