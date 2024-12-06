@@ -32,9 +32,9 @@ Crear y probar una función simple:
 - Construir el sitio web localmente.
 - Crear un PR.
 
-Mostrar otras cosas que hicimos pero que hay tiempo de profunizar hoy:
+Mostrar otras cosas que hicimos pero que no podemos cubrir hoy:
 
-* Check de integracion para una dependencias reversa.
+* Check de integración para una dependencias reversa.
 * El formato "incubadora".
 
 ## Flujo de trabajo
