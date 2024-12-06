@@ -55,3 +55,12 @@ En vivo.
 * [R packages (2e)](https://r-pkgs.org/).
 * Worflow personalizado para checkear la integracion con una dependencia reversa: [ejemplo](https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7).
 * El formato "incubadora" ([meta](https://github.com/dsincubator/meta), [template](https://github.com/dsincubator/template)).
+
+
+
+<details>
+<summary>EN</summary>
+
+TODO
+
+</details>
