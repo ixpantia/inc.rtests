@@ -54,3 +54,66 @@ En vivo.
 * [R packages (2e)](https://r-pkgs.org/).
 * Worflow personalizado para checkear la integracion con una dependencia reversa: [ejemplo](https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7).
 * El formato "incubadora" ([meta](https://github.com/dsincubator/meta), [template](https://github.com/dsincubator/template)).
+
+
+<details>
+<summary>EN</summary>
+
+# inc.rtests
+
+This meetup provides an overview of the workflow for package development, focusing on unit testing and CI/CD.
+
+## Importance
+
+> A package is a set of conventions for organizing your code and related artifacts: if you follow those conventions, you get a lot of free tools.
+> -- https://mastering-shiny.org/scaling-packaging.html
+
+## Audience
+
+Data scientists with some experience writing code and functions in R, but with little to no experience in R package development.
+
+## Objectives
+
+Create and check the basic infrastructure of a package:
+
+- Create a package in R.
+- Run structure checks and fix issues.
+- Create a checklist of additional infrastructure to consider.
+- Add a README.
+- Set up structure checks in GitHub Actions.
+- Configure website deployment on GitHub Pages.
+
+Create and test a simple function:
+
+- Create a simple function.
+- Test it.
+- Report coverage.
+- Document it.
+- Run structure checks and fix issues.
+- Build the website locally.
+- Create a PR.
+
+Show other things we did but can't cover today:
+
+* Integration checks for a reverse dependency.
+* The "incubator" format.
+
+## Workflow
+
+<img src=https://github.com/user-attachments/assets/aabb5a62-7f4b-4767-b1d7-52130c395531 width=500>
+
+https://r-pkgs.org/whole-game.html#review
+
+## Demo
+
+Live.
+
+## Resources
+
+* The [usethis](https://usethis.r-lib.org/reference/index.html) package for creating packages and much more.
+* Workflows for working with R: [r-lib/actions/examples](https://github.com/r-lib/actions/tree/v2/examples#example-workflows).
+* [R packages (2e)](https://r-pkgs.org/).
+* Custom workflow for checking integration with a reverse dependency: [example](https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7).
+* The "incubator" format ([meta](https://github.com/dsincubator/meta), [template](https://github.com/dsincubator/template)).
+
+</details>
