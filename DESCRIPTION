@@ -1,6 +1,6 @@
 Package: inc.rtests
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.2
+Version: 0.0.2.9000
 Authors@R: 
     person("Mauro", "Lepore", , "maurolepore@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "https://orcid.org/0000-0002-1986-7988"))
