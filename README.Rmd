@@ -36,5 +36,8 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(inc.rtests)
-## basic example code
+
+greet()
+
+greet("Mauro")
 ```
