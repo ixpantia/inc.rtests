@@ -125,6 +125,13 @@ From an R package in a fresh environment (e.g. on GitHub Codespaces):
 
 * Install R: https://github.com/r-lib/rig
 
+* Ensure to start R from a blank slate:
+
+```bash
+# ~/.bash_aliases
+alias R="R --no-save --no-restore-data"
+```
+
 * Install R-package dependencies: `pak::pak()`
 
 * Install devtools: `pak::pak("devtools")`
