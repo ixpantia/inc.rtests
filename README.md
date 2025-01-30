@@ -149,7 +149,7 @@ if (interactive()) {
   * Quit R from the R console: `q()`
   * Start R from the terminal: `R`
 
-* Setup the devtools workflow as aliases, then run each `alias` from ther terminal, e.g. `rload_all`
+* Setup the devtools workflow as aliases, then run each `alias` from ther terminal, e.g. `rtest`
 
 ```bash
 # ~/.bash_aliases 
@@ -160,7 +160,7 @@ alias rcheck="Rscript -e 'devtools::check()'"
 
 * Setup the devtools workflow in a [Taskfile.yml](https://taskfile.dev/installation/) then:
   * run each `task` from the [extension](https://marketplace.visualstudio.com/items?itemName=task.vscode-task), or
-  * run each `task` from the terminal, e.g. `task load_all`.
+  * run each `task` from the terminal, e.g. `task test`.
 
 ```yaml
 # Taskfile.yml
