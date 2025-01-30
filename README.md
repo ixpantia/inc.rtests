@@ -146,7 +146,6 @@ if (interactive()) {
 
 ```bash
 # ~/.bash_aliases 
-alias rload_all="Rscript -e 'devtools::load_all()'"
 alias rtest="Rscript -e 'devtools::test()'"
 alias rdocument="Rscript -e 'devtools::document()'"
 alias rcheck="Rscript -e 'devtools::check()'"
@@ -161,9 +160,6 @@ alias rcheck="Rscript -e 'devtools::check()'"
 version: '3'
 
 tasks:
-  load_all:
-    cmds:
-      - Rscript -e "devtools::load_all()"
   test:
     cmds:
       - Rscript -e "devtools::test()"
