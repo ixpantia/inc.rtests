@@ -40,4 +40,7 @@ tasks:
   run_examples:
     cmds:
       - Rscript -e "devtools::run_examples()"
+  roxygen_skeleton:
+    cmds:
+      - echo "#' Title\n#'\n#' @param\n#'\n#' @return\n#' @export\n#'\n#' @examples"
   
