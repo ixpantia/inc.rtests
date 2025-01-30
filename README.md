@@ -117,4 +117,64 @@ Live.
 [example](https://github.com/ixpantia/tower/pull/14/files#diff-8fe6f19b5ce17649a885f3ad91e83f63c1ca2dc91dbcd00fa3bd7e242f80dda7).
 * The "incubator" format ([template](https://github.com/dsincubator/template)).
 
+## Setup
+
+> As a developer I want to setup a fresh system so that I can use the devtools workflow to develop an R package.
+
+From an R package in a fresh environment (e.g. on GitHub Codespaces):
+
+* Install R: https://github.com/r-lib/rig
+
+* Install R-package dependencies: `pak::pak()`
+
+* Install devtools: `pak::pak("devtools")`
+
+* Setup devtools: `usethis::use_devtools()` 
+
+```r
+# .Rprofile
+if (interactive()) {
+  suppressMessages(require(devtools))
+}
+```
+
+* Restart R:
+  * Quit R from the R console: `q()`
+  * Start R from the terminal: `R`
+
+* Setup the devtools workflow as aliases, then run each `alias` from ther terminal, e.g. `rload_all`
+
+```bash
+# ~/.bash_aliases 
+alias rload_all="Rscript -e 'devtools::load_all()'"
+alias rtest="Rscript -e 'devtools::test()'"
+alias rdocument="Rscript -e 'devtools::document()'"
+alias rcheck="Rscript -e 'devtools::check()'"
+```
+
+* Setup the devtools workflow in a [Taskfile.yml](https://taskfile.dev/installation/) then:
+  * run each `task` from the [extension](https://marketplace.visualstudio.com/items?itemName=task.vscode-task), or
+  * run each `task` from the terminal, e.g. `task load_all`.
+
+```yaml
+# Taskfile.yml
+version: '3'
+
+tasks:
+  load_all:
+    cmds:
+      - Rscript -e "devtools::load_all()"
+  test:
+    cmds:
+      - Rscript -e "devtools::test()"
+  document:
+    cmds:
+      - Rscript -e "devtools::document()"
+  check:
+    cmds:
+      - Rscript -e "devtools::check()"
+```
+
+For more tasks see Taskfile.yml
+
 </details>
