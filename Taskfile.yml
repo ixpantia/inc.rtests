@@ -1,0 +1,43 @@
+version: '3'
+
+tasks:
+  load_all:
+    cmds:
+      - Rscript -e "devtools::load_all()"
+  test:
+    cmds:
+      - Rscript -e "devtools::test()"
+  document:
+    cmds:
+      - Rscript -e "devtools::document()"
+  check:
+    cmds:
+      - Rscript -e "devtools::check()"
+  build_site:
+    cmds:
+      - Rscript -e "pkgdown::build_site()"
+  preview_site:
+    cmds:
+      - Rscript -e "pkgdown::preview_site()"
+  tidy_descrition:
+    cmds:
+      - Rscript -e "usethis::use_tidy_description()"
+  style:
+    cmds:
+      - Rscript -e "usethis::use_tidy_style()"
+  spell_check:
+    cmds:
+      - Rscript -e "spelling::spell_check_package()"
+  test_integration:
+    cmds:
+      - Rscript -e "devtools::load_all(); testthat::test_dir('tests/integration')"
+  package_coverage:
+    cmds:
+      - Rscript -e "covr::package_coverage()"
+  build_readme:
+    cmds:
+      - Rscript -e "devtools::build_readme()"
+  run_examples:
+    cmds:
+      - Rscript -e "devtools::run_examples()"
+  
