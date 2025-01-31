@@ -136,7 +136,7 @@ alias R="R --no-save --no-restore-data"
 
 * Install devtools: `pak::pak("devtools")`
 
-* Setup devtools: `usethis::use_devtools()` 
+* Setup devtools: `usethis::use_devtools()` (and restart R)
 
 ```r
 # .Rprofile
@@ -145,11 +145,8 @@ if (interactive()) {
 }
 ```
 
-* Restart R:
-  * Quit R from the R console: `q()`
-  * Start R from the terminal: `R`
-
-* Setup the devtools workflow as aliases, then run each `alias` from ther terminal, e.g. `rtest`
+* Setup the devtools workflow as aliases then
+  * run each `alias` from ther terminal, e.g. `rtest`
 
 ```bash
 # ~/.bash_aliases 
