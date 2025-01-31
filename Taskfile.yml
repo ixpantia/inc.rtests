@@ -1,9 +1,6 @@
 version: '3'
 
 tasks:
-  load_all:
-    cmds:
-      - Rscript -e "devtools::load_all()"
   test:
     cmds:
       - Rscript -e "devtools::test()"
@@ -40,4 +37,8 @@ tasks:
   run_examples:
     cmds:
       - Rscript -e "devtools::run_examples()"
+  roxygen_skeleton:
+    cmds:
+      - echo -e "#' Title\n#'\n#' @param\n#'\n#' @return\n#' @export\n#'\n#' @examples"
+    silent: true  
   
